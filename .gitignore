@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Poetry virtualenvs (if in project directory)
+.venv/
+
+# Environment variables
+.env
+
+# macOS
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Output files
+*.csv
+
+# Python Poetry
+poetry.lock

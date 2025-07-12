@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "get-papers-list"
+version = "0.1.0"
+description = "Fetch PubMed papers with pharma/biotech affiliations"
+authors = ["Kamesh S <skameshtamilan@gmail.com>"]
+packages = [{ include = "get_papers" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+biopython = "^1.83"
+pandas = "^2.2.2"
+beautifulsoup4 = "^4.13.0"
+openpyxl = "^3.1.2"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"
