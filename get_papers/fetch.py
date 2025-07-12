@@ -1,6 +1,6 @@
 from Bio import Entrez
 
-Entrez.email = "skameshtamilan@gmail.com"  # Required by PubMed
+Entrez.email = "skameshtamilan@gmail.com" 
 
 def search_pubmed(query: str, max_results: int = 20) -> list[str]:
     with Entrez.esearch(db="pubmed", term=query, retmax=max_results) as handle:

@@ -1,5 +1,3 @@
-# cli.py
-
 import argparse
 from get_papers.fetch import search_pubmed, fetch_paper_details
 from get_papers.filter import extract_affiliation_info

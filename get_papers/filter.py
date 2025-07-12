@@ -12,7 +12,6 @@ def extract_affiliation_info(text: str) -> List[Tuple[str, str, str, str, str]]:
         affiliations = re.findall(r"AD  - (.+)", entry)
         email = re.search(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", entry)
 
-        # Filter companies based on keywords
         company_affils = [aff for aff in affiliations if any(keyword in aff.lower() for keyword in ["pharma", "biotech", "inc", "ltd", "corp", "llc"])]
 
         if company_affils:
